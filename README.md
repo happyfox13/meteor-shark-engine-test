@@ -1,6 +1,6 @@
 This is a simple meteor app that has two collections (Test, User)
 The app starts with a table view of all records from Test collection, where 'user' field is a joined document from User collection.
-To test the render time, click 'Change template' button, and then click 'Show table'. After rendering the whole template console.log() indicates time take for rendering (in miliseconds)
+To test the render time, click 'Change template' button, and then click 'Show table'. After rendering the whole template console.log() indicates time took for rendering (in miliseconds)
 
 Run:
 
