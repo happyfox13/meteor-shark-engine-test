@@ -1,0 +1,50 @@
+<head>
+  <title>new_engine_test</title>
+</head>
+
+<body>
+{{>select}}
+</body>
+
+<template name="select">
+
+{{#if show}}
+  {{>table}}
+{{else}}
+  {{>empty}}
+{{/if}}
+
+</template>
+
+<template name="table">
+  <h1>Hello World!</h1>
+  <button class="off">Change template</button>
+  <table>
+  <caption>...</caption>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>message</th>
+      <th>username</th>
+      <th>mail</th>
+    </tr>
+  </thead>
+  
+ <tbody>
+  {{#each data}}
+  <tr>
+  	<td>{{title}}</td>
+  	<td>{{message}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+  	</tr>
+  {{/each}}
+  </tbody>
+</table>
+</template>
+
+<template name="empty">
+<p>user: {{status.user}}, test: {{status.test}}</p>
+<button class="on">Show table</button>
+</template>
+
