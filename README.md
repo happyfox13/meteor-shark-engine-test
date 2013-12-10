@@ -5,11 +5,11 @@ To test the render time, click 'Change template' button, and then click 'Show ta
 Run:
 
 	meteor
-And the render time on 0.6.6.3: -/+ 290 ms (click 'change template' -> 'show table' -> look at the console)
+And the render time on 0.6.6.3 version takes -/+ 290 ms (click 'change template' -> 'show table' -> look at the console)
 
 Run:
 
 	meteor --release template-engine-preview-5
-Render time on template-engine-preview-5: -/+ 1250 ms (click 'change template' -> 'show table' -> look at the console)
+Render time on template-engine-preview-5 release takes -/+ 1250 ms (click 'change template' -> 'show table' -> look at the console)
 
 Additionally, the joined User collection is not loaded with all documents in the template, in all rows after Ctrl+R (hard refresh) on themplate-engine-preview-5 release
